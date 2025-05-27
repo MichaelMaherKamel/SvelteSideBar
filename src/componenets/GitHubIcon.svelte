@@ -1,6 +1,6 @@
 <!-- Enhanced GitHubIcon.svelte with Paper Fold Effect -->
 <a 
-  href="/" 
+  href="https://github.com/MichaelMaherKamel/SvelteSideBar" 
   target="_blank" 
   rel="noopener noreferrer"
   class="github-corner"
