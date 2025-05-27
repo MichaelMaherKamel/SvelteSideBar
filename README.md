@@ -1,38 +1,15 @@
-# sv
+# What is SvelteSideBar?
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+**SvelteSideBar** is a modern, highly functional, and fully responsive sidebar component designed for web applications.
 
-## Creating a project
+It's built with:
+*   🚀 **Pure Svelte:** Leveraging the latest Svelte 5 runes and reactive patterns.
+*   🎨 **Native CSS:** No external dependencies, just clean, efficient, and easily customizable styles.
 
-If you're seeing this, you've probably already done this step. Congrats!
+### Key Highlights:
+*   **Responsive:** Adapts seamlessly from desktop (open/closed views) to mobile (bottom sheet).
+*   **Lightweight:** Minimal bundle size for fast performance.
+*   **Customizable:** Easy to theme and integrate into any design system.
+*   **TypeScript Ready:** Provides full TypeScript support for robust development.
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Essentially, it's "The Sidebar that everyone loves nowadays," crafted with simplicity and performance at its core.
