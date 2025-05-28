@@ -401,8 +401,8 @@
   /* Full edge-to-edge on mobile */
   @media (width < 48rem) {
     .dashboard-container {
-      padding: 5px;
-      height: 99svh;
+      padding: 5px 5px 10px 5px;
+      height: 100svh;
     }
     
     .content-area {
