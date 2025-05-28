@@ -402,7 +402,7 @@
   @media (width < 48rem) {
     .dashboard-container {
       padding: 5px;
-      height: 97svh;
+      height: 99svh;
     }
     
     .content-area {
