@@ -151,7 +151,7 @@
 
 <style>
   .sidebar {
-    height: 97svh;
+    height: 99svh;
     display: flex;
     flex-direction: column;
     transition: width 0.3s ease, background-color 0.3s ease, color 0.3s ease;
@@ -358,20 +358,25 @@
     margin-left: 8px;
   }
   
-  .sidebar-footer {
+.sidebar-footer {
     display: flex;
     align-items: center;
     padding: 12px;
     box-sizing: border-box;
+    min-height: 65px; /* Match header height */
+    height: 65px;
+    flex-shrink: 0; /* Prevent footer from shrinking */
   }
   
   .sidebar.closed .sidebar-footer {
-    padding: 0 12px;
+    padding: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+    min-height: 65px; /* Maintain same height */
+    height: 65px;
   }
   
   /* Override the button styles for user menu in closed state */
