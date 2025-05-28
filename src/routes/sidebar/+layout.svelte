@@ -131,16 +131,16 @@
     
     switch (action) {
       case 'profile':
-        goto('/profile');
+        goto('#');
         break;
       case 'settings':
-        goto('/account/settings');
+        goto('#');
         break;
       case 'preferences':
-        goto('/account/preferences');
+        goto('#');
         break;
       case 'help':
-        goto('/help');
+        goto('#');
         break;
       case 'logout':
        
