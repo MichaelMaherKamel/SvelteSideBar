@@ -129,21 +129,18 @@ body {
     margin-right: auto;
 }
 
-/* Enhanced card component styles */
+/* Enhanced card component styles - REMOVED ANIMATIONS AND HOVER EFFECTS */
 .card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 16px;
     padding: 0;
     box-shadow: var(--card-shadow);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     overflow: hidden;
+    /* REMOVED: transition: transform 0.2s ease, box-shadow 0.2s ease; */
 }
 
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--card-shadow-hover);
-}
+/* REMOVED: .card:hover styles */
 
 .card-header {
     padding: 20px 24px;

@@ -381,20 +381,17 @@
     color: var(--text-muted);
   }
   
-  /* Card styles */
+  /* REMOVED CARD ANIMATIONS AND HOVER EFFECTS */
   .card {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 16px;
     overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: var(--card-shadow);
+    /* REMOVED: transition: transform 0.2s ease, box-shadow 0.2s ease; */
   }
   
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--card-shadow-hover);
-  }
+  /* REMOVED: .card:hover styles */
   
   .card-header {
     display: flex;

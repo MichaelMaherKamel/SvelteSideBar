@@ -204,20 +204,18 @@
     gap: 24px;
   }
   
+  /* REMOVED CARD ANIMATIONS AND HOVER EFFECTS */
   .card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 16px;
     padding: 0;
     box-shadow: var(--card-shadow);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     overflow: hidden;
+    /* REMOVED: transition: transform 0.2s ease, box-shadow 0.2s ease; */
   }
   
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--card-shadow-hover);
-  }
+  /* REMOVED: .card:hover styles */
   
   .card-header {
     padding: 20px 24px;
@@ -337,22 +335,21 @@
     padding: 0 16px;
   }
   
+  /* REMOVED ACTIVITY ITEM HOVER EFFECTS */
   .activity-item {
     display: flex;
     align-items: center;
     gap: 12px;
     padding: 16px 8px;
     border-bottom: 1px solid var(--border-color);
-    transition: background-color 0.2s;
+    /* REMOVED: transition: background-color 0.2s; */
   }
   
   .activity-item:last-child {
     border-bottom: none;
   }
   
-  .activity-item:hover {
-    background-color: var(--bg-elevated);
-  }
+  /* REMOVED: .activity-item:hover styles */
   
   .activity-icon {
     font-size: 20px;
@@ -383,17 +380,15 @@
     color: var(--text-muted);
   }
   
+  /* REMOVED ACTIVITY ARROW ANIMATIONS */
   .activity-arrow {
     font-size: 18px;
-    opacity: 0;
-    transition: opacity 0.2s, transform 0.2s;
     color: var(--text-muted);
+    /* REMOVED: opacity: 0; */
+    /* REMOVED: transition: opacity 0.2s, transform 0.2s; */
   }
   
-  .activity-item:hover .activity-arrow {
-    opacity: 1;
-    transform: translateX(4px);
-  }
+  /* REMOVED: .activity-item:hover .activity-arrow styles */
   
   .view-all-btn {
     background: transparent;

@@ -395,29 +395,24 @@
     color: var(--text-muted);
   }
   
-  /* Enhanced card styles */
+  /* REMOVED CARD ANIMATIONS AND HOVER EFFECTS */
   .card {
     border-radius: 16px;
     padding: 0;
     background: var(--card-bg);
     border: 1px solid var(--border-color);
-    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s ease, border-color 0.3s ease;
     box-shadow: var(--card-shadow);
     overflow: hidden;
+    /* REMOVED: transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s ease, border-color 0.3s ease; */
   }
   
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--card-shadow-hover);
-  }
+  /* REMOVED: .card:hover styles */
   
   .danger-card {
     border-color: var(--error-color);
   }
   
-  .danger-card:hover {
-    box-shadow: var(--danger-shadow);
-  }
+  /* REMOVED: .danger-card:hover styles */
   
   .card-header {
     padding: 20px 24px;
