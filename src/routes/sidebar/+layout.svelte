@@ -11,7 +11,7 @@
   import MobileSheet from '../../componenets/sidebar/MobileSheet.svelte';
 
   // Import types from the shared file
-  import type { NavigationItem, UserMenuActionEvent } from '$lib/index';
+  import type { NavigationItem } from '$lib/index';
   
   // State using Svelte 5 runes
   let isSidebarOpen = $state(true);

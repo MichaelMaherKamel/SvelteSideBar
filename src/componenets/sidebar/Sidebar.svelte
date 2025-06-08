@@ -50,6 +50,10 @@
 
   // Handlers that call the callback props
   const handleNavigation = (item: any) => {
+    // Immediately scroll to top when navigation is triggered
+    scrollToTop();
+    
+    // Then navigate
     if (navigate) navigate({ item });
   };
 
@@ -57,6 +61,40 @@
     const { action } = event.detail;
     if (userMenuAction) userMenuAction({ action });
   };
+  
+  // Function to scroll to top without animation
+  function scrollToTop() {
+    // Try to find the main content area first
+    const contentArea = document.querySelector('.content-area');
+    if (contentArea) {
+      contentArea.scrollTop = 0;
+    }
+    
+    // Also try to find any element with overflow scroll in the content
+    const scrollableContent = document.querySelector('[data-content-scroll]');
+    if (scrollableContent) {
+      scrollableContent.scrollTop = 0;
+    }
+    
+    // Try to find the main element inside content area
+    const mainContent = document.querySelector('main');
+    if (mainContent) {
+      mainContent.scrollTop = 0;
+    }
+    
+    // Finally, also scroll the window to top as fallback
+    window.scrollTo(0, 0);
+    
+    // Additional attempt to find any scrollable containers
+    const allScrollables = document.querySelectorAll('*');
+    allScrollables.forEach(el => {
+      const style = window.getComputedStyle(el);
+      if (style.overflow === 'auto' || style.overflow === 'scroll' || 
+          style.overflowY === 'auto' || style.overflowY === 'scroll') {
+        el.scrollTop = 0;
+      }
+    });
+  }
 </script>
 
 <aside class="sidebar" class:open={isOpen} class:closed={!isOpen} class:theme-light={currentTheme === 'light'} class:theme-dark={currentTheme === 'dark'}>
@@ -150,6 +188,15 @@
 </aside>
 
 <style>
+  /* Disable smooth scrolling globally */
+  :global(html) {
+    scroll-behavior: auto !important;
+  }
+  
+  :global(*) {
+    scroll-behavior: auto !important;
+  }
+
   .sidebar {
     height: 99svh;
     display: flex;
@@ -364,7 +411,6 @@
     padding: 12px;
     box-sizing: border-box;
     min-height: 65px; /* Match header height */
-    height: 65px;
     flex-shrink: 0; /* Prevent footer from shrinking */
   }
   
