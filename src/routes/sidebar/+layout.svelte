@@ -406,7 +406,7 @@
     }
     
     .content-area {
-      height: 100%;
+      height: 95svh;
     }
     
     .theme-dark .content-area {
