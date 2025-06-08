@@ -1,7 +1,7 @@
 <!-- src/routes/dashboard/+page.svelte -->
 <script lang="ts">
   import { onMount } from 'svelte';
-  import Design from '../componenets/Design.svelte';
+  import Design from '../componenets/Design/Design.svelte';
 	import GitHubIcon from '../componenets/GitHubIcon.svelte';
   
   let mounted = $state(false);
